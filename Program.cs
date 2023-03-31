@@ -7,6 +7,17 @@ namespace Triangle_class
     {
         static void Main(string[] args)
         {
+            Person person = new Person("Roman");
+            Person person1 = new Person("Olga");
+            Triangle triangle = new Triangle(2.0, 3.9, 5.0);
+            RightTriangle rightTriangle = new RightTriangle(10.3);
+
+            person.AskForArea(triangle);
+            triangle.RequestArea();
+            person1.AskForArea(rightTriangle);
+            rightTriangle.RequestArea();
+            
+
             //п’ять  різних  трикутників,  у  тому  числі  правильні
             List<Triangle> triangles = new List<Triangle>();
             triangles.Add(new Triangle(2.0, 3.9, 5.0));
