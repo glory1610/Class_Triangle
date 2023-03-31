@@ -45,5 +45,7 @@ namespace Triangle_class
                     throw new FormatException($"The {format} format string is not supported.");
             }
         }
+
+        public new event EventHandler AreaRequested;
     }
 }

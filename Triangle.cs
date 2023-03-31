@@ -83,5 +83,12 @@ namespace Triangle_class
         {
             return new Triangle(left.a - right.a, left.b - right.b, left.c - right.c);
         }
+
+        public event EventHandler AreaRequested;
+
+        public void RequestArea()
+        {
+            AreaRequested?.Invoke(this, EventArgs.Empty);
+        }
     }
 }
